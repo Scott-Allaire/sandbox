@@ -1,5 +1,17 @@
 # Sandbox
 
+This is a quick app I threw together to read weather information from a REST API (Python/Flask) I have running as a docker container on my NAS.
+
+It demonstrates:
+* Basic Angular app
+* NGRX store & effect
+* Basic RxJS
+
+Next steps:
+* Testing!
+* Add a nice Material design 
+* Dockerize it with Nginx or Apache
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
 ## Development server
