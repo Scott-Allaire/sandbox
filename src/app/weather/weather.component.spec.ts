@@ -2,9 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WeatherComponent } from './weather.component';
 import {Store, StoreModule} from '@ngrx/store';
-import * as fromWeather from './weather_reducer';
+import * as fromWeather from './weather-reducer';
 import {AppState} from '../app.module';
-import {fetchCurrentWeather} from './weather_actions';
+import {fetchCurrentWeather} from './weather-actions';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {WeatherService} from './weather.service';
 

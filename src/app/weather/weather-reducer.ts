@@ -1,6 +1,6 @@
 import {CurrentConditions} from './weather.service';
-import {on, createReducer, createSelector} from '@ngrx/store';
-import {fetchCurrentWeatherSuccess} from './weather_actions';
+import {createReducer, on} from '@ngrx/store';
+import {fetchCurrentWeatherFailure, fetchCurrentWeatherSuccess} from './weather-actions';
 import {AppState} from '../app.module';
 
 export const initialState: CurrentConditions = {};
@@ -10,6 +10,9 @@ const _weatherReducer = createReducer(
   on(fetchCurrentWeatherSuccess,
     (state, { response }) => (response)
   ),
+  on(fetchCurrentWeatherFailure,
+    () => initialState
+  )
 );
 
 export function weatherReducer(state, action) {

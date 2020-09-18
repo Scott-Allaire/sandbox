@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {select, Store} from '@ngrx/store';
-import {fetchCurrentWeather} from './weather_actions';
+import {fetchCurrentWeather} from './weather-actions';
 import {AppState} from '../app.module';
 import {CurrentConditions} from './weather.service';
 import {Observable} from 'rxjs';
-import {currentWeatherSelector} from './weather_reducer';
+import {currentWeatherSelector} from './weather-reducer';
 
 @Component({
   selector: 'app-weather',

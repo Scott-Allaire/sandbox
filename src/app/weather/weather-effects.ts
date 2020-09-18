@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Actions, createEffect, ofType} from '@ngrx/effects';
 import {WeatherService} from './weather.service';
-import {FETCH_CURRENT_WEATHER, FETCH_CURRENT_WEATHER_SUCCESS} from './weather_actions';
+import {FETCH_CURRENT_WEATHER, FETCH_CURRENT_WEATHER_FAILURE, FETCH_CURRENT_WEATHER_SUCCESS} from './weather-actions';
 import {catchError, map, mergeMap} from 'rxjs/operators';
 import {EMPTY} from 'rxjs';
 
