@@ -12,7 +12,7 @@ import {currentWeatherSelector} from './weather-reducer';
   styleUrls: ['./weather.component.scss']
 })
 export class WeatherComponent implements OnInit {
-  private current$: Observable<CurrentConditions>;
+  current$: Observable<CurrentConditions>;
 
   constructor(private store: Store<AppState>) { }
 
